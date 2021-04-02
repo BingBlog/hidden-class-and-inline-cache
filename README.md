@@ -19,3 +19,12 @@ curl --socks5 192.168.1.254:3099 https://www.cyberciti.biz/
 
 v8引擎：编译(一)
 https://segmentfault.com/a/1190000023231568
+
+生成assembly code
+gcc -Og -S mstore.c
+
+生成二进制code
+gcc -Og -c mstore.c
+
+反编译二进制
+objdump -d mstore.o
